@@ -13,7 +13,7 @@ a-¿Cómo actualizo mi repositorio, al estado que esté el repo que hice FORK?
 b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA?
 
 c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
-Actualizar un fork al estado de otro fork parece ser posible, pero requiere trabajo extra (unirlos con un remote)
+Actualizar un fork al estado de otro fork parece ser posible, pero requiere trabajo extra (unirlos con un remote, no se utliza pull request)
 
 d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quiero actualizar
 el fork?
@@ -60,3 +60,6 @@ git commit -m "ADD: Contestado preguntas"
 git push origin respuestas
 
 Ir a GitHub y hacer el pull request con la rama "respuestas" donde BETA hara el cambio en el repositorio original.
+=======
+
+
