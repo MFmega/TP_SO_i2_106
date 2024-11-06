@@ -9,8 +9,10 @@ Elio Yilali
 
 
 a-¿Cómo actualizo mi repositorio, al estado que esté el repo que hice FORK?
+Se puede actulizar el repositorio mediante el comando git pull o utilizando el Sync fork de github.
 
 b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA?
+No, pero el BETA puede actulizar su FORK al estado del fork de GAMMA o al de ALFA mediante la siguente ruta Pull requests/New pull request/compare across forks/head repository:/elegir el de GAMMA o ALFA/Create pull request
 
 c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
 Actualizar un fork al estado de otro fork parece ser posible, pero requiere trabajo extra (unirlos con un remote)
