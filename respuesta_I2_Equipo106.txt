@@ -20,4 +20,43 @@ el fork?
 No, al actualizar el fork se "fusionan" o mergean ambos, manteniendo los archivos que no sean conflictivos.
 
 e- realizar un listado, paso a paso ,de los comando necesarios para resolver este TP por
-orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos ,
+orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos.
+
+Interaccion 2 (FORK)
+
+1- Manuel Ferrer:
+
+Crea el repositorio junto con el README y el archivo fork.txt
+
+2 y 3- Elio Yilali / Diego Fernandez Caldas:
+
+cd /home/osboxes/TP_SO_i2_106
+nano fork.txt
+git status
+git add .
+git commit -m "ADD: Archivo 'fork.txt' modificado"
+git push origin main
+
+4- Manuel Ferrer:
+
+cd /home/osboxes/TP_SO_i2_106
+touch NuevoDato.txt
+
+5- Elio Yilali / Diego Fernandez Caldas
+
+git pull
+
+6- Manuel Ferrer:
+
+touch respuesta_I2_Equipo106.txt
+nano respuesta_I2_Equipo106.txt
+
+7- Elio Yilali / Diego Fernandez Caldas
+
+nano respuesta_I2_Equipo106.txt
+git checkout -b respuestas
+git add .
+git commit -m "ADD: Contestado preguntas"
+git push origin respuestas
+
+Ir a GitHub y hacer el pull request con el brench "respuestas" para que BETA lo acepte en el repositorio original.
