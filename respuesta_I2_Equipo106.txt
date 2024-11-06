@@ -15,7 +15,7 @@ b-¿Puede ALFA actualizar su FORK al estado del fork de GAMMA?
 No, pero el BETA puede actulizar su FORK al estado del fork de GAMMA o al de ALFA mediante la siguente ruta Pull requests/New pull request/compare across forks/head repository:/elegir el de GAMMA o ALFA/Create pull request
 
 c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
-Actualizar un fork al estado de otro fork parece ser posible, pero requiere trabajo extra (unirlos con un remote)
+Actualizar un fork al estado de otro fork parece ser posible, pero requiere trabajo extra (unirlos con un remote, no se utliza pull request)
 
 d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quiero actualizar
 el fork?
@@ -23,3 +23,48 @@ No, al actualizar el fork se "fusionan" o mergean ambos, manteniendo los archivo
 
 e- realizar un listado, paso a paso ,de los comando necesarios para resolver este TP por
 orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos ,
+
+=======
+
+
+Interaccion 2 (FORK)
+
+1- Manuel Ferrer:
+
+Crea el repositorio junto con el README y el archivo fork.txt
+
+2 y 3- Elio Yilali / Diego Fernandez Caldas:
+
+cd /home/osboxes/TP_SO_i2_106
+nano fork.txt
+git status
+git add .
+git commit -m "ADD: Archivo 'fork.txt' modificado"
+git push origin main
+
+4- Manuel Ferrer:
+
+cd /home/osboxes/TP_SO_i2_106
+touch NuevoDato.txt
+
+5- Elio Yilali / Diego Fernandez Caldas
+
+git pull
+
+6- Manuel Ferrer:
+
+touch respuesta_I2_Equipo106.txt
+nano respuesta_I2_Equipo106.txt
+
+7- Elio Yilali / Diego Fernandez Caldas
+
+nano respuesta_I2_Equipo106.txt
+git checkout -b respuestas
+git add .
+git commit -m "ADD: Contestado preguntas"
+git push origin respuestas
+
+Ir a GitHub y hacer el pull request con la rama "respuestas" donde BETA hara el cambio en el repositorio original.
+=======
+
+
