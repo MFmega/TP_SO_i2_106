@@ -59,4 +59,4 @@ git add .
 git commit -m "ADD: Contestado preguntas"
 git push origin respuestas
 
-Ir a GitHub y hacer el pull request con el brench "respuestas" para que BETA lo acepte en el repositorio original.
+Ir a GitHub y hacer el pull request con la rama "respuestas" donde BETA hara el cambio en el repositorio original.
